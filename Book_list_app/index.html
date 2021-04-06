@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    
+    <title>My book App</title>
+</head>
+<body>
+
+
+   
+        <header class="main-header bg-light text-center mb-4">
+            <div class="display-4 cointainer">
+                <i class="fas fa-book-reader text-primary"></i> My <span class="text-primary">Book</span>List
+            </div>
+        </header>
+
+        <!--here div for alert will be appended-->
+        <div class="container">
+        <form action="" id="submitted" class="mt-4">
+                <label for="bookname" class="form-label display-6    text-primary">Book Name</label>
+                <input type="text" id="booname" class="form-control" placeholder="Name of book">
+
+                <label for="authorname" class="form-label display-6   text-primary">Author Name</label>
+                <input type="text"  id="booau" class="form-control" placeholder="Name of Author">
+
+                <label for="bookname" class="form-label display-6    text-primary">Book ID</label>
+                <input type="text"  id="booid" class="form-control mb-4" placeholder="Book ID">
+
+                <button  type="submit"  class="btn btn-primary form-control">Submit</button>
+        </form>
+        <table class="table table-info table-striped mt-4">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Author</th>
+                    <th>ID</th>
+                    <th>#</th>
+                </tr>
+            </thead>
+            <tbody id="table-list">
+                
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/331a089dac.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
